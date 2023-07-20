@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(13, 39, 87);
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  .main{
+    display: flex;
+    flex-direction: 1 column;
+    width: 100%;
+  }
+  .left{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+
+
+  }
+
+  .using{
+    margin-top: -30px;
+  }
+
+  .p1{
+    font-size: 90px;
+    color: white;
+  }
+
+  .p2{
+    font-size: 50px;
+    color: white;
+
+  }
+
+  .p3{
+    font-size: 50px;
+    color: rgb(25, 212, 166);
+  }
+
+  .pic{
+
+    margin-top: -90px;
+    width: 70%;
+  }
+
+  .card{
+  width: 320px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.208);
+  margin-top: 220px;
+  margin-left: 800px;
+  /* margin-bottom: -50px; */
+  overflow:visible;
+
+  position: absolute;
+  
+}
+.img{
+  width: 30px;
+  border-radius: 50%;
+
+}
+.search{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: 1 column;
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+input{
+  border-radius: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  border: none;
+  color: black;
+}
+button{
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.cloud{
+  width: 170px;
+  margin-left: 80px;
+  margin-top: 20px;
+  
+}
+.temp{
+  color: white;
+  text-align: center;
+  
+  font-weight: lighter;
+}
+.city{
+  color: white;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.display{
+  display: flex;
+  flex-direction: 1 column;
+  width: 320px;
+  padding-left: 10px;
+}
+.d1{
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+.d2{
+  width: 50%;
+  text-align: center;
+  border-left: 1px solid white;
+  height: 50px;
+  color: white;
+  font-weight: lighter;
+}
+.hum{
+  font-weight: lighter;
+  margin-top: 1px;
+  margin-bottom: -10px;
+}
+.wind1{
+  font-weight: lighter;
+  margin-top: 1px;
+  margin-bottom: -10px;
+}
+.Humidity{
+  font-weight: lighter;
+}
+.wind{
+  font-weight: lighter;
+}
