@@ -76,20 +76,34 @@ export default function WeatherApp() {
         className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center relative order-2 md:order-1 md:ml-12"
       >
         <h1
-          className="text-white mb-4 md:mb-6 text-center md:text-left"
+          className="text-white mb-4  md:mb-6 text-center md:text-left whitespace-nowrap"
           style={{
-            fontSize: 'clamp(32px, 8vw, 80px)',
+            fontSize: 'clamp(24px, 8vw, 62px)',
             fontFamily: 'Georgia, serif',
-            fontWeight: 700,
+            fontWeight: 600,
             lineHeight: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            textAlign: 'center',
+            marginTop: '2rem',
+            marginBottom: '2rem',
+            marginLeft: '2rem',
+            marginRight: '2rem',
           }}
         >
           Weather App
         </h1>
 
         <div
-          className="flex items-baseline gap-2 mb-6 md:mb-12 text-center md:text-left"
-          style={{ fontSize: 'clamp(20px, 4vw, 44px)', fontFamily: 'Georgia, serif' }}
+          className="flex items-baseline gap-2 mb-6 md:mb-12 w-full"
+          style={{
+            fontSize: 'clamp(20px, 4vw, 44px)',
+            fontFamily: 'Georgia, serif',
+            marginTop: '2rem',
+            justifyContent: 'center',
+          }}
         >
           <span className="text-white">Using</span>
           <span style={{ color: '#2DE0A1' }}>Javascript</span>
@@ -98,7 +112,7 @@ export default function WeatherApp() {
         <img
           src="/Capture2.png"
           alt=""
-          className="mt-2 md:ml-4 md:mt-4 w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72 object-contain"
+          className="self-center mt-2 md:mt-4 w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72 object-contain"
         />
       </div>
 
