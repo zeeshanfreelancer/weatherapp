@@ -69,7 +69,6 @@ export default function WeatherApp() {
   return (
     <div
       className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0 py-6 md:py-0 relative overflow-x-hidden overflow-y-auto"
-      style={{ backgroundColor: '#0a1628' }}
     >
       {/* Left Section - Branding */}
       <div
@@ -118,46 +117,49 @@ export default function WeatherApp() {
 
       {/* Right Section - Weather Widget */}
       <div
-        className="w-full max-w-[420px] md:max-w-none md:w-[420px] flex flex-col flex-shrink-0 self-center order-1 md:order-2 rounded-2xl md:rounded-none overflow-hidden p-5 pt-6 pb-5 md:p-8 min-h-[480px] md:min-h-[540px] h-[480px] md:h-[540px]"
+        className="w-full max-w-[380px] md:max-w-none md:w-[380px] flex flex-col flex-shrink-0 self-center order-1 md:order-2 rounded-2xl md:rounded-none overflow-hidden p-5 pt-12 pb-5 md:pt-14 md:px-8 md:pb-8 min-h-[440px] md:min-h-[500px] h-[440px] md:h-[500px]"
         style={{ backgroundColor: '#3e5373' }}
       >
         {/* Search Bar */}
-        <div className="flex gap-2 md:gap-3 mb-6 md:mb-10 px-0 md:px-2 min-w-0">
-          <input
-            type="text"
-            placeholder=" Enter city name "
-            value={searchInput}
-            onChange={(e) => setSearchInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-            className="flex-1 min-w-0 rounded-full bg-white text-gray-800 focus:outline-none placeholder-gray-600"
-            style={{ fontSize: '16px', padding: '12px 20px 12px 20px' }}
-          />
-          <button
-            type="button"
-            onClick={handleSearch}
-            disabled={loading}
-            className="flex-shrink-0 flex items-center justify-center cursor-pointer transition-transform hover:scale-105 disabled:opacity-60 w-11 h-11 md:w-[50px] md:h-[50px]"
-            style={{
-              borderRadius: 9999,
-              backgroundColor: '#ffffff',
-              boxShadow: '0 0 0 2px #000000',
-            }}
-            aria-label="Search"
-          >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#000000"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+        <div
+          className="flex gap-1.5 md:gap-2 mb-6 md:mb-10 px-0 md:px-2 min-w-0 justify-center"
+          style={{ marginTop: '2.5rem' }}
+        >
+          <div className="flex gap-1.5 md:gap-2 min-w-0 w-full max-w-[280px] md:max-w-[260px]">
+            <input
+              type="text"
+              placeholder=" Enter city name "
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+              onKeyPress={handleKeyPress}
+              className="flex-1 min-w-0 rounded-full bg-white text-gray-800 focus:outline-none placeholder-gray-600"
+              style={{ fontSize: '13px', padding: '8px 14px' }}
+            />
+            <button
+              type="button"
+              onClick={handleSearch}
+              disabled={loading}
+              className="flex-shrink-0 flex items-center justify-center cursor-pointer transition-transform hover:scale-105 disabled:opacity-60 w-8 h-8 md:w-9 md:h-9 rounded-full"
+              style={{
+                backgroundColor: '#ffffff',
+              }}
+              aria-label="Search"
             >
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg>
-          </button>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {error && (
